@@ -1,0 +1,27 @@
+{
+  "skill_name": "eval-regression-gate",
+  "should_trigger": [
+    "I changed the system prompt for our support bot, did I break anything?",
+    "pass rate went from 84% to 81% after my prompt edit, is that a real regression or noise",
+    "set up an eval suite for this extraction prompt so we can catch regressions",
+    "add a CI check that fails the PR when a prompt change makes the model's answers worse",
+    "compare these two eval result files and tell me if the new prompt is better",
+    "we want to swap the model behind the classifier, run our evals before and after and tell me if quality dropped",
+    "I tweaked the tool descriptions for the agent, run the evals against main and gate it",
+    "the new few-shot examples improved 3 of 40 eval cases, is that significant?",
+    "our LLM evals give different results on every run, how do I know if a change actually helped",
+    "write regression tests for prompts/summarize.txt that run on every pull request"
+  ],
+  "should_not_trigger": [
+    "rewrite this system prompt so it is clearer and shorter",
+    "our monthly LLM bill doubled, find out where the tokens are going",
+    "test_checkout_total fails about one run in ten on CI and passes on re-run",
+    "the agent got stuck in a loop on this run, here is the trace, what went wrong",
+    "review our RAG pipeline design, the retrieved chunks seem off",
+    "write unit tests for the function that parses the model's JSON output",
+    "run an A/B test analysis on checkout conversion for the new button",
+    "fine-tune a small model on our support tickets",
+    "explain what a p-value is",
+    "which model should we use for summarising legal contracts?"
+  ]
+}

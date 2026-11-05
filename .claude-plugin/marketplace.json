@@ -1,0 +1,15 @@
+{
+  "name": "panhwerwaseem-eval-regression-gate",
+  "owner": {
+    "name": "Muhammad Waseem Panhwar",
+    "url": "https://github.com/panhwerwaseem"
+  },
+  "description": "Single-skill marketplace for eval-regression-gate.",
+  "plugins": [
+    {
+      "name": "eval-regression-gate",
+      "source": "./",
+      "description": "Runs a provider-neutral eval suite against a prompt, model or agent change and gates it with a pass, fail or inconclusive verdict from paired statistics."
+    }
+  ]
+}

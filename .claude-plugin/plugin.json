@@ -1,0 +1,12 @@
+{
+  "name": "eval-regression-gate",
+  "description": "Runs a provider-neutral eval suite against a prompt, model or agent change and gates it with a pass, fail or inconclusive verdict from paired statistics.",
+  "author": {
+    "name": "Muhammad Waseem Panhwar",
+    "url": "https://github.com/panhwerwaseem"
+  },
+  "homepage": "https://github.com/panhwerwaseem/eval-regression-gate",
+  "repository": "https://github.com/panhwerwaseem/eval-regression-gate",
+  "license": "MIT",
+  "keywords": ["evals", "llm", "prompt-engineering", "regression-testing", "ci", "agent-skills"]
+}

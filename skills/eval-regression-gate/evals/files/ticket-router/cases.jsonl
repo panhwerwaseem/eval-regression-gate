@@ -1,0 +1,30 @@
+{"id": "refund-01", "input": "I was charged twice for my May subscription. Please refund one of the payments.", "grader": {"type": "json_field", "path": "category", "value": "refund"}}
+{"id": "refund-02", "input": "I cancelled within the trial period and still paid. I want my money back.", "grader": {"type": "json_field", "path": "category", "value": "refund"}}
+{"id": "refund-03", "input": "The order arrived broken. Can I get a refund?", "grader": {"type": "json_field", "path": "category", "value": "refund"}}
+{"id": "refund-04", "input": "You charged twice for one seat on our team plan.", "grader": {"type": "regex", "pattern": "\"priority\":\\s*\"high\""}}
+{"id": "refund-05", "input": "I returned the headphones two weeks ago and have not had my refund.", "grader": {"type": "contains", "value": "refund request"}}
+{"id": "refund-06", "input": "Refund please. I bought the annual plan by mistake.", "grader": {"type": "json_field", "path": "category", "value": "refund"}}
+{"id": "refund-07", "input": "I would like my money back for the unused gift card.", "grader": {"type": "json_field", "path": "category", "value": "refund"}}
+{"id": "outage-01", "input": "Your dashboard is down and my whole team is blocked.", "grader": {"type": "json_field", "path": "category", "value": "outage"}}
+{"id": "outage-02", "input": "I get a 502 error on every page since this morning.", "grader": {"type": "json_field", "path": "category", "value": "outage"}}
+{"id": "outage-03", "input": "The API has been unavailable for twenty minutes.", "grader": {"type": "json_field", "path": "category", "value": "outage"}}
+{"id": "outage-04", "input": "Is there an outage? Nothing responds.", "grader": {"type": "json_field", "path": "category", "value": "outage"}}
+{"id": "outage-05", "input": "The reports page is not loading for any of our users.", "grader": {"type": "json_field", "path": "category", "value": "outage"}}
+{"id": "outage-06", "input": "Checkout is down for all our customers.", "grader": {"type": "regex", "pattern": "\"priority\":\\s*\"high\""}}
+{"id": "outage-07", "input": "Webhooks have been unavailable since the last deploy.", "graders": [{"type": "json_field", "path": "category", "value": "outage"}, {"type": "contains", "value": "status page"}]}
+{"id": "login-01", "input": "I forgot my password and the reset email never arrives.", "grader": {"type": "json_field", "path": "category", "value": "login"}}
+{"id": "login-02", "input": "I cannot log in on my new phone.", "grader": {"type": "json_field", "path": "category", "value": "login"}}
+{"id": "login-03", "input": "My account is locked out after too many attempts.", "grader": {"type": "json_field", "path": "category", "value": "login"}}
+{"id": "login-04", "input": "The sign in page keeps sending me back to the start.", "grader": {"type": "json_field", "path": "category", "value": "login"}}
+{"id": "login-05", "input": "Please help me change my password.", "graders": [{"type": "contains", "value": "Reset Link", "ignore_case": true}, {"type": "contains", "value": "refund", "negate": true}]}
+{"id": "shipping-01", "input": "Where is my parcel? It was due on Monday.", "grader": {"type": "json_field", "path": "category", "value": "shipping"}}
+{"id": "shipping-02", "input": "The tracking page has not updated in five days.", "grader": {"type": "json_field", "path": "category", "value": "shipping"}}
+{"id": "shipping-03", "input": "The courier left my order with a neighbour I do not know.", "grader": {"type": "json_field", "path": "category", "value": "shipping"}}
+{"id": "shipping-04", "input": "Can I change the delivery address for order 4471?", "grader": {"type": "json_field", "path": "category", "value": "shipping"}}
+{"id": "shipping-05", "input": "My parcel shows as delivered but I do not have it.", "grader": {"type": "regex", "pattern": "tracking (number|link)"}}
+{"id": "other-01", "input": "Do you offer a discount for charities?", "grader": {"type": "json_field", "path": "category", "value": "other"}}
+{"id": "other-02", "input": "How do I export my data to a spreadsheet?", "grader": {"type": "json_field", "path": "category", "value": "other"}}
+{"id": "other-03", "input": "asdf", "grader": {"type": "exact", "value": "{\"category\": \"other\", \"priority\": \"normal\", \"reply\": \"Thanks for getting in touch. Could you tell us a bit more?\"}"}}
+{"id": "mixed-01", "input": "I cannot see my invoice because my password stopped working.", "grader": {"type": "json_field", "path": "category", "value": "login"}}
+{"id": "mixed-02", "input": "I am locked out of the billing portal.", "grader": {"type": "json_field", "path": "category", "value": "login"}}
+{"id": "mixed-03", "input": "I need the receipt for last month but I cannot sign in.", "grader": {"type": "json_field", "path": "category", "value": "login"}}
